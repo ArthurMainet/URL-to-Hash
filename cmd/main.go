@@ -13,15 +13,6 @@ import (
 	"net/http"
 )
 
-// func main() {
-// 	v1, err := strconv.Atoi(strings.ReplaceAll(strings.TrimPrefix("version1.0.0.0", "version1."), ".", ""))
-// 	m := "milk"
-// 	x := strings.IndexRune(m, 'i')
-// 	strings.ContainsRune()
-// 	fmt.Println(x)
-// 	fmt.Println(err, v1)
-// }
-
 func main() {
 	conf := configs.LoadConfig()
 	db := db.NewDB(conf)
